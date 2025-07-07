@@ -14,38 +14,41 @@ html, body {
 header {
     width: 100;
     color: rgb(169, 116, 25);
-    text-align: center;
+    text-align:center;
     background-color: #393631;
-    padding: 16px;
-
+    padding: 16px 16px 0px 16px;
+    margin: auto rgb(169, 116, 25);
+    box-shadow: 0px 10px 20px black;
     & p {
+        text-align: center;
         margin-top: 7px;
+        margin-bottom: 20px;
     }
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     background-color: rgba(234, 171, 112, 0.618);
     flex: 1px;
 }
 
+
 .container-sm {
-    max-width: 90%;
+    width: 500px;
+    min-width: 40%;
     height: 500px; 
-    background-color: #232327;
+    background-color: #393631;
     border-radius: 10px 10px 10px 10px ;
     display: flex;
     justify-content: space-around;
     color: #F7F0F0;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 12px;
     box-shadow: 7px 12px 10px rgba(0, 0, 0, 0.623);;
 }
 
 .sobre {
-    text-align: center;
+    text-align: left;
     color: rgba(255, 255, 255, 0.456);
     padding: 10px;
     & img {
@@ -58,11 +61,11 @@ main {
         padding-top: 20px;
     }
     & p {
-        text-align: center;
-        width: 280px;
+        text-align: left;
         margin: auto;
     }
 }
+
 
 .wrapper {
     display: flex;
@@ -82,4 +85,32 @@ footer {
         border: 0px;
     }
     
+}
+
+.links {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    object-fit: cover;
+    padding-top: 1px;
+
+}
+
+.links:hover {
+
+}
+.logo {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.hover-palavra {
+transition: color 0.3s ease;
+cursor: default;
+padding: 0 2px;
+}
+
+.hover-palavra:hover {
+color: rgb(255, 127, 227);
 }
